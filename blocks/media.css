@@ -1,0 +1,105 @@
+/* Para pantallas de hasta 1024px (Diseño Tablet - 768px) */
+@media screen and (max-width: 1024px) {
+  .logo {
+    width: 254px;
+    height: 66px;
+    margin: 30px auto 0;
+  }
+
+  .lead__title {
+    font-size: 64px;
+    line-height: 1.04;
+    width: 720px;
+    margin: 186px auto 0;
+  }
+
+  .lead__subtitle {
+    font-size: 26px;
+    line-height: 1.2;
+    width: 720px;
+    margin: 24px auto 0;
+  }
+
+  .lead__image {
+    width: 768px;
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    margin: 471px auto 0;
+  }
+
+  .intro {
+    width: 720px;
+    margin: 1041px auto 0;
+  }
+
+  .intro__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .intro__text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .footer {
+    width: 194px;
+    margin: 60px auto 80px;
+    font-size: 14px;
+    text-align: right;
+  }
+}
+
+/* Para pantallas de hasta 544px (Diseño Mobile - 320px) */
+@media screen and (max-width: 544px) {
+  .logo {
+    width: 188px;
+    height: 52px;
+    margin: 20px auto 0;
+  }
+
+  .lead__title {
+    font-size: 48px;
+    line-height: 1;
+    width: 288px;
+    margin: 122px auto 0;
+  }
+
+  .lead__subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    width: 288px;
+    margin: 24px auto 0;
+  }
+
+  .lead__image {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 306px auto 0;
+  }
+
+  .intro {
+    width: 288px;
+    margin: 570px auto 0;
+  }
+
+  .intro__title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .intro__text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .footer {
+    width: 194px;
+    margin: 60px auto 80px;
+    font-size: 14px;
+    text-align: right;
+  }
+}
