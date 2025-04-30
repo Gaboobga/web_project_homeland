@@ -1,5 +1,9 @@
 .intro {
-  padding: 120px 148px 0;
+  width: 100%;
+  max-width: 830px;
+  margin: 120px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .intro__title {
@@ -7,7 +11,7 @@
   line-height: 58px;
   font-weight: 900;
   margin-bottom: 40px;
-  width: 830px;
+  text-align: left;
 }
 
 .intro__text {
@@ -15,17 +19,14 @@
   line-height: 34px;
   font-weight: 400;
   margin-bottom: 24px;
-  width: 738px;
 }
 
 .intro__text_author {
   text-align: right;
-  width: 732px;
 }
 
 .intro__text:last-child {
   font-size: 16px;
-  line-height: 163%;
-  width: 722px;
+  line-height: 1.63;
   margin-top: 40px;
 }

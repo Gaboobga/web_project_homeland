@@ -1,7 +1,8 @@
 .footer {
-  padding: 60px 0;
+  max-width: 194px;
+  margin: 60px auto 0;
+  padding: 0 20px;
   text-align: center;
-  margin-right: 148px;
 }
 
 .footer__text {
