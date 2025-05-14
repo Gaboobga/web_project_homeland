@@ -1,0 +1,126 @@
+.places {
+  width: 100%;
+  max-width: 1184px;
+  margin: 120px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.place {
+  margin-bottom: 80px;
+}
+
+.place__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.place__column_left,
+.place__column_right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.place__column_left {
+  align-items: flex-start;
+  max-width: 460px;
+}
+
+.place__column_right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 65px;
+  max-width: 600px;
+}
+
+.place__title {
+  grid-area: title;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #ffffff;
+  margin: 0 0 24px;
+  text-align: left;
+}
+
+.place__column_media {
+  grid-area: media;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.place__image {
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+}
+
+.place__image:hover {
+  opacity: 0.5;
+}
+
+.place__button {
+  grid-area: button;
+  display: inline-block;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: linear-gradient(90deg, #1e90ff, #007bff);
+  padding: 13px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.3s ease;
+}
+
+.place__button:hover {
+  opacity: 0.5;
+}
+
+.place__column_text {
+  grid-area: text;
+  max-width: 600px;
+}
+
+.place__credits {
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.place__credits-heading {
+  color: #aaaaaa;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.place__credits-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.place__text {
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+  color: #ffffff;
+  margin: 0 0 24px;
+  text-align: left;
+}
