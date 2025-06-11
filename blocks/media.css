@@ -4,14 +4,14 @@
   .logo {
     width: 254px;
     height: 66px;
-    margin: 30px auto 0;
+    margin: 0px auto 0;
   }
 
   .lead__title {
     font-size: 64px;
     line-height: 1.04;
     max-width: 720px;
-    margin: 186px auto 0;
+    margin: auto 0;
   }
 
   .lead__subtitle {
@@ -32,7 +32,7 @@
 
   .intro {
     max-width: 720px;
-    margin: 1041px auto 0;
+    margin: 20px auto 0;
     padding: 0 16px;
   }
 
@@ -48,7 +48,7 @@
 
   .footer {
     max-width: 194px;
-    margin: 60px auto 80px;
+    margin: 0px auto 0px;
     font-size: 14px;
     text-align: center;
   }
@@ -280,6 +280,7 @@
   .intro {
     padding: 0 16px;
     text-align: center;
+    margin-bottom: 25px;
   }
 
   .intro__title {
@@ -314,9 +315,9 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
-    padding: 0 16px;
+    padding: 0 10px;
     max-width: 288px;
-    margin: 0 auto;
+    margin: 0;
   }
 
   .gallery__image {
@@ -331,19 +332,35 @@
   }
 
   .place__content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "credits"
+      "media"
+      "text"
+      "button";
     gap: 16px;
     align-items: center;
   }
 
+  .place__column_left {
+    display: contents;
+  }
+
+  .place__column_right {
+    grid-area: text;
+    margin-top: 0;
+  }
   .place__title {
+    grid-area: title;
     font-size: 32px;
     line-height: 36px;
     text-align: center;
   }
 
   .place__credits {
+    grid-area: credits;
     text-align: center;
   }
 
@@ -352,6 +369,7 @@
   }
 
   .place__image {
+    grid-area: media;
     width: 100%;
     max-width: 288px;
     height: auto;
@@ -365,6 +383,7 @@
   }
 
   .place__button {
+    grid-area: button;
     align-self: center;
     font-size: 14px;
     padding: 10px 16px;
