@@ -353,6 +353,15 @@
     display: contents;
   }
 
+  .place__column_left {
+    order: 2;
+  }
+
+  .place__column_right {
+    order: 1;
+    margin-top: 0 !important;
+  }
+
   .place__title {
     order: 1;
     font-size: 32px;
